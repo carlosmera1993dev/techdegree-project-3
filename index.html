@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <title>Techdegree signup form</title>
+</head>
+<body>
+
+    <header>
+        <h1>The Code Review</h1>
+
+        <div class="head-centering">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right now in your inbox</p>
+        </div>    
+    </header>
+
+    <main>
+        <form>
+            <fieldset class="first-form">
+                <legend id="first-legend">Contact Information</legend>
+            
+                <div class="form-elements">
+                    <label for="name">Full Name</label>
+                    <input required id="name" type="text" name="user-name" placeholder="Required">
+                </div> 
+                <div class="form-elements">  
+                    <label for="email">Email Address</label>
+                    <input required id="email" type="email" name="user-email" placeholder="Required">
+                </div>
+                <div class="form-elements">   
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" name="user-phone" placeholder="Optional">
+                </div>
+                <div class="form-elements">
+                    <label for="address">Street Address</label>
+                    <input required id="address" type="text" name="user-address" placeholder="Required">
+                </div>
+                <div class="form-elements">
+                    <label for="city">City</label>
+                    <input id="city" type="text" name="user-city" placeholder="Required">
+                </div>
+                <div class="form-elements">
+                    <label for="state">State</label>
+                    <select required name="user-state" id="state">
+                        <option value="" disabled selected hidden>Choose State</option>
+                        <option value="colorado">Colorado</option>
+                        <option value="kentucky">Kentucky</option>
+                        <option value="hawaii">Hawaii</option>
+                    </select>
+                </div>
+                <div class="form-zip">
+                    <label for="zip">Zip Code</label>
+                    <input required id="zip" type="text" name="user-zip">
+                </div>
+                
+            </fieldset>
+
+            <div id="bottom-form">
+            <fieldset class="second-form">
+                <legend>Newsletter</legend>
+
+                <label>Select the newsletters you would like to recieve</label>
+                <div class="check-radio">
+                    <input type="checkbox" name="news-options" value="html-news" id="html-check">
+                    <label class="bottom-labels" for="html-check">HTML News</label>
+                    <input type="checkbox" name="news-options" value="css-news" id="css-check">
+                    <label for="css-check">CSS News</label>
+                    <input type="checkbox" name="news-options" value="javascript-news" id="js-check">
+                    <label for="js-check">Javascript News</label>
+                </div>    
+                <label>Newsletter Format</label>
+                <div class="check-radio">
+                    <input type="radio" name="news-format" value="html-format" id="html-radio">
+                    <label for="html-radio">HTML</label>
+                    <input type="radio" name="news-format" value="text-format" id="text-radio">
+                    <label for="text-radio">Plain text</label>
+                </div>  
+                <label for="other-info">Other topics you'd like to hear about</label>
+                <textarea name="user-text" id="other-info" cols="30" rows="10"></textarea>
+
+                <button type="submit">Sign Up</button>
+
+            </fieldset>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <p>Copyright The Code Review</p>
+
+    </footer>
+    
+</body>
+</html>
